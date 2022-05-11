@@ -17,6 +17,7 @@
   </head>
 
   <body>
+    <div id="particles-js"></div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -54,6 +55,10 @@
 
     <section id="Home" class="bg-dark text-light min-vh-100 section_style">
       <div class="container">
+        <div class="count-particles">
+          <span class="js-count-particles">--</span> particles
+        </div>
+
         <div class="row">
           <div class="col-lg-6 home_details">
             <h5 class="text-success">HI THERE,</h5>
@@ -240,169 +245,171 @@
           </div>
         </div>
         <div class="line"></div>
-        <div class="header">
-          <h2>
-            My
-            <h2 class="text-success">Testimonials</h2>
-          </h2>
-        </div>
-        <div
-          id="carouselExampleIndicators"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselExampleIndicators"
-              data-bs-slide-to="3"
-              aria-label="Slide 4"
-            ></button>
+        <div class="container Testimonials">
+          <div class="header">
+            <h2>
+              My
+              <h2 class="text-success">Testimonials</h2>
+            </h2>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-              <div class="row">
-                <div class="col-lg-6">
-                  <img
-                    src="./Resources/Images/t1.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-lg-6">
-                  <h3>Random</h3>
-                  <div class="price">
-                    <span>R200</span>
+          <div
+            id="carouselExampleIndicators"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="row carousel-border">
+                  <div class="col-lg-6">
+                    <img
+                      src="./Resources/Images/t1.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
                   </div>
-                  <p class="fst-italic">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Reprehenderit, voluptatum!
-                  </p>
-                  <ul>
-                    <li>ok</li>
-                    <li>ok</li>
-                    <li>ok</li>
-                  </ul>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Consectetur, doloremque.
-                  </p>
+                  <div class="col-lg-6">
+                    <h3>Random</h3>
+                    <div class="price">
+                      <span>R200</span>
+                    </div>
+                    <p class="fst-italic">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Reprehenderit, voluptatum!
+                    </p>
+                    <ul>
+                      <li>ok</li>
+                      <li>ok</li>
+                      <li>ok</li>
+                    </ul>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Consectetur, doloremque.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="5000">
-              <div class="row">
-                <div class="col-lg-6">
-                  <img
-                    src="./Resources/Images/t2.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-lg-6">
-                  <h3>Random</h3>
-                  <div class="price">
-                    <span>R200</span>
+              <div class="carousel-item" data-bs-interval="5000">
+                <div class="row carousel-border">
+                  <div class="col-lg-6">
+                    <img
+                      src="./Resources/Images/t2.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
                   </div>
-                  <p class="fst-italic">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Reprehenderit, voluptatum!
-                  </p>
-                  <ul>
-                    <li>ok</li>
-                    <li>ok</li>
-                    <li>ok</li>
-                  </ul>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Consectetur, doloremque.
-                  </p>
+                  <div class="col-lg-6">
+                    <h3>Random</h3>
+                    <div class="price">
+                      <span>R200</span>
+                    </div>
+                    <p class="fst-italic">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Reprehenderit, voluptatum!
+                    </p>
+                    <ul>
+                      <li>ok</li>
+                      <li>ok</li>
+                      <li>ok</li>
+                    </ul>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Consectetur, doloremque.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="3500">
-              <div class="row">
-                <div class="col-lg-6">
-                  <img
-                    src="./Resources/Images/t3.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-lg-6">
-                  <h3>Random</h3>
-                  <div class="price">
-                    <span>R200</span>
+              <div class="carousel-item" data-bs-interval="3500">
+                <div class="row carousel-border">
+                  <div class="col-lg-6">
+                    <img
+                      src="./Resources/Images/t3.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
                   </div>
-                  <p class="fst-italic">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Reprehenderit, voluptatum!
-                  </p>
-                  <ul>
-                    <li>ok</li>
-                    <li>ok</li>
-                    <li>ok</li>
-                  </ul>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Consectetur, doloremque.
-                  </p>
+                  <div class="col-lg-6">
+                    <h3>Random</h3>
+                    <div class="price">
+                      <span>R200</span>
+                    </div>
+                    <p class="fst-italic">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Reprehenderit, voluptatum!
+                    </p>
+                    <ul>
+                      <li>ok</li>
+                      <li>ok</li>
+                      <li>ok</li>
+                    </ul>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Consectetur, doloremque.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-              <div class="row">
-                <div class="col-lg-6">
-                  <img
-                    src="./Resources/Images/t4.jpg"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="col-lg-6">
-                  <h3>Random</h3>
-                  <div class="price">
-                    <span>R200</span>
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <img
+                      src="./Resources/Images/t4.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
                   </div>
-                  <p class="fst-italic">
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                    Reprehenderit, voluptatum!
-                  </p>
-                  <ul>
-                    <li>ok</li>
-                    <li>ok</li>
-                    <li>ok</li>
-                  </ul>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    Consectetur, doloremque.
-                  </p>
+                  <div class="col-lg-6">
+                    <h3>Random</h3>
+                    <div class="price">
+                      <span>R200</span>
+                    </div>
+                    <p class="fst-italic">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Reprehenderit, voluptatum!
+                    </p>
+                    <ul>
+                      <li>ok</li>
+                      <li>ok</li>
+                      <li>ok</li>
+                    </ul>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Consectetur, doloremque.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <div class="line"></div>
         </div>
-        <div class="line"></div>
       </div>
     </section>
     <section id="Resume" class="resume bg-dark text-light min-vh-100">
@@ -506,7 +513,7 @@
       </div>
     </section>
     <section id="Projects" class="bg-dark text-light">
-      <div class="container">
+      <div class="container project-box">
         <div class="header">
           <h2>
             My
@@ -608,7 +615,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="row">
+            <div class="row contact-box-details">
               <div class="contact_details border border-white">
                 <h6>CONTACT ADDRESS</h6>
                 <div class="container contact_icons">
@@ -648,6 +655,8 @@
         <span>Copyright © 2022 Abu-Bakr Khan | All Rights Reserved </span>
       </div>
     </footer>
+    <script src="./Resources/Home Page Wallpaper/particlesjs-config.json"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script
       src="https://kit.fontawesome.com/edecc44186.js"
       crossorigin="anonymous"

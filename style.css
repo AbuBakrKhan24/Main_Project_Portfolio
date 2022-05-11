@@ -13,6 +13,69 @@ section.section_style {
   border-top: solid 2px #08d665;
 }
 
+/* particles */
+
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles {
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+}
+
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+
 /* end all */
 
 /* nav */
@@ -41,6 +104,7 @@ section#Home {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 30px;
 }
 
 img.me {
@@ -83,6 +147,8 @@ img.about_pic {
 
 .badges {
   font-size: 3pc;
+  width: 20%;
+  text-align: center;
 }
 
 .progress-design {
@@ -102,8 +168,25 @@ img.about_pic {
 
 /* Testimonials */
 
+.Testimonials {
+  padding: 80px;
+}
+
 .carousel-indicators {
-  bottom: -60px;
+  bottom: 10px;
+}
+.carousel-indicators [data-bs-target] {
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.carousel-inner {
+  border: 2px solid #198754;
+  padding: 75px;
+}
+
+.carousel-items {
 }
 
 /* about done */
@@ -256,6 +339,9 @@ input[type="submit"] {
   justify-content: center;
 }
 
+.contact-boc-details {
+  margin: 0px;
+}
 /* contact done */
 
 /* footer */
