@@ -34,7 +34,7 @@ a.navbar-brand {
 /* Home */
 
 section#Home {
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .home_details {
@@ -46,7 +46,7 @@ section#Home {
 
 img.me {
   width: 100%;
-  height: 480px;
+  height: 100%;
 }
 /* Home done */
 
@@ -58,7 +58,7 @@ section#About {
 
 img.about_pic {
   height: 100%;
-  /* width: 400px; */
+  width: 100%;
   object-fit: cover;
 }
 
@@ -114,6 +114,13 @@ img.about_pic {
   height: 300px;
   object-fit: cover;
   border-radius: 20%;
+  padding-bottom: 20px;
+}
+
+.testimonial-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* about done */

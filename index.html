@@ -53,6 +53,7 @@
     </nav>
 
     <section id="Home" class="bg-dark text-light min-vh-100 section_style">
+      <div id="particular"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-6 home_details">
@@ -240,11 +241,11 @@
           </div>
         </div>
         <div class="line"></div>
-        <div class="container Testimonials lg-p-5 md-p-3 sm-p-0">
+        <div class="container Testimonials">
           <div class="header">
             <h2>
               My
-              <h2 class="text-success">Testimonials</h2>
+              <span class="text-success">Testimonials</span>
             </h2>
           </div>
           <div
@@ -322,11 +323,10 @@
                     <h3>Zoë Van Der Schyff</h3>
 
                     <p class="fst-italic">
-                      Abubakr is amazingly talented and and is determined to
-                      achieve all his goals . He has many technical and soft
-                      skills and makes use of them on a daily basis. He
-                      maintains focus and strives to reach his full potentional
-                      everyday.
+                      Abu-Bakr is amazingly talented and is determined to
+                      achieve all his goals. He has many technical and soft
+                      skills and makes use of them daily. He maintains focus and
+                      strives to reach his full potential every day.
                     </p>
                   </div>
                 </div>
@@ -344,8 +344,11 @@
                     <h3>Le-Andre Moritz</h3>
 
                     <p class="fst-italic">
-                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                      Reprehenderit, voluptatum!
+                      Abu-Bakr is one of the most disciplined people that I have
+                      ever met, He is Hardworking as well which makes for a very
+                      reliable person to interact with a business sense. He is
+                      amazingly kind and his open-minded mentality makes him an
+                      all-around delightful person.
                     </p>
                   </div>
                 </div>
@@ -354,7 +357,7 @@
                 <div class="row">
                   <div class="col-lg-6">
                     <img
-                      src="./Resources/Images/t4.jpg"
+                      src="./Resources/Images/Carla (1).JPG"
                       class="d-block w-100 Testimonial-pic"
                       alt="..."
                     />
@@ -377,7 +380,7 @@
                 <div class="row">
                   <div class="col-lg-6">
                     <img
-                      src="./Resources/Images/t1.jpg"
+                      src="./Resources/Images/Mika.jpg"
                       class="d-block w-100 Testimonial-pic"
                       alt="..."
                     />
@@ -798,6 +801,13 @@
       </div>
     </div>
 
+    <script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+      particlesJS.load("particular", "particles.json", function () {
+        console.log("callback - particles.js config loaded");
+      });
+    </script>
     <script
       src="https://kit.fontawesome.com/edecc44186.js"
       crossorigin="anonymous"
