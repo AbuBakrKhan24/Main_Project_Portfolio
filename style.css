@@ -7,11 +7,7 @@ section.section_style {
   padding-bottom: 30px;
 }
 
-.line {
-  margin-top: 15%;
-  margin-bottom: 15%;
-  border-top: solid 2px #08d665;
-}
+
 
 #particular {
   position: absolute;
@@ -46,6 +42,14 @@ section#Home {
   padding-top: 5%;
   position: relative;
 }
+
+.home-info {
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
 
 .home_details {
   display: flex;
@@ -96,6 +100,12 @@ img.about_pic {
   padding-left: 10px;
 }
 
+.line-about {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  border-top: solid 2px #08d665;
+}
+
 /* Skilss */
 
 .skill-content {
@@ -117,6 +127,12 @@ img.about_pic {
   margin-left: 20px;
   margin-top: 25px;
   width: 70%;
+}
+
+.line-skills {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  border-top: solid 2px #08d665;
 }
 
 /* Testimonials */
@@ -152,6 +168,7 @@ img.about_pic {
   padding: 30px;
 }
 
+
 /* about done */
 
 /* Resume */
@@ -179,16 +196,27 @@ section#Resume {
   border: 2px solid #08d665;
 }
 
+.line-resume {
+  margin-top: 10%;
+  
+  border-top: solid 2px #08d665;
+}
+
 /* resume done */
 
 /* Project */
 
 section#Projects {
   display: flex;
-  /* padding-top: 15%; */
-  /* padding-bottom: 10%; */
   flex-direction: column;
   justify-content: center;
+  padding-top: 6%;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
 }
 
 .project {
@@ -223,11 +251,27 @@ section#Projects {
 .project-card {
   padding-top: 10px;
   padding-bottom: 10px;
+  width: 40%;
 }
+
+
 
 .project img {
   object-fit: cover;
   width: 100%;
+}
+
+.project-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.line-projects {
+  margin-top: 5%;
+  margin-bottom: 9%;
+  border-top: solid 2px #08d665;
 }
 
 /* project done */
@@ -236,16 +280,16 @@ section#Projects {
 
 section#Contact {
   padding-top: 5%;
-  padding-bottom: 5%;
+  padding-bottom: 12%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.header {
+.header-contact {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
 }
 
 .contact_details {
@@ -278,7 +322,7 @@ input[type="submit"]:hover {
   background-color: #fff;
   border-color: rgb(8 214 101);
   outline: 0;
-  box-shadow: 0 0 0 0.15rem rgb(8 214 101);
+  box-shadow: 0 0 0 -0.85rem rgb(8 214 101);
 }
 
 .contact_details {
