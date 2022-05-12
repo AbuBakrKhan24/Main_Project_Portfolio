@@ -13,6 +13,15 @@ section.section_style {
   border-top: solid 2px #08d665;
 }
 
+#particular {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
 /* end all */
 
 /* nav */
@@ -35,6 +44,7 @@ a.navbar-brand {
 
 section#Home {
   padding-top: 5%;
+  position: relative;
 }
 
 .home_details {
@@ -121,6 +131,10 @@ img.about_pic {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.modal-pic {
+  padding: 30px;
 }
 
 /* about done */
