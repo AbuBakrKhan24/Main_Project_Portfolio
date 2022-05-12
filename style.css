@@ -13,69 +13,6 @@ section.section_style {
   border-top: solid 2px #08d665;
 }
 
-/* particles */
-
-/* ---- reset ---- */
-
-body {
-  margin: 0;
-  font: normal 75% Arial, Helvetica, sans-serif;
-}
-
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
-
-/* ---- particles.js container ---- */
-
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: #b61924;
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-/* ---- stats.js ---- */
-
-.count-particles {
-  background: #000022;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 80px;
-  color: #13e8e9;
-  font-size: 0.8em;
-  text-align: left;
-  text-indent: 4px;
-  line-height: 14px;
-  padding-bottom: 2px;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.js-count-particles {
-  font-size: 1.1em;
-}
-
-#stats,
-.count-particles {
-  -webkit-user-select: none;
-}
-
-#stats {
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-
-.count-particles {
-  border-radius: 0 0 3px 3px;
-}
-
 /* end all */
 
 /* nav */
@@ -157,20 +94,7 @@ img.about_pic {
   width: 70%;
 }
 
-.fa-js {
-  padding-right: 6px;
-  padding-left: 6px;
-}
-
-.fa-github {
-  padding-right: 6px;
-}
-
 /* Testimonials */
-
-.Testimonials {
-  padding: 80px;
-}
 
 .carousel-indicators {
   bottom: 10px;
@@ -186,7 +110,10 @@ img.about_pic {
   padding: 75px;
 }
 
-.carousel-items {
+.Testimonial-pic {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20%;
 }
 
 /* about done */
@@ -296,9 +223,23 @@ section#Contact {
 input[type="submit"] {
   border-radius: 30px;
   padding: 10px 20px;
-  background: #08d665;
+  background: darkslategrey;
   color: #fff;
   border: #08d665;
+}
+
+input[type="submit"]:hover {
+  background: #08d665;
+  border: #08d665;
+  transition: 0.5s;
+}
+
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: rgb(8 214 101);
+  outline: 0;
+  box-shadow: 0 0 0 0.15rem rgb(8 214 101);
 }
 
 .contact_details {
