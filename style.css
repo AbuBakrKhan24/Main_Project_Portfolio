@@ -27,6 +27,7 @@ nav.navbar {
 }
 
 .nav-badge {
+  position:fixed;
   object-fit: cover;
   width: 5%;
 }
@@ -43,10 +44,7 @@ nav.navbar {
   justify-content: end;
 }
 
-.navbar-toggler {
- position: fixed;
- right: 20px;
-}
+
 
 a.navbar-brand {
   padding-left: 20px;
