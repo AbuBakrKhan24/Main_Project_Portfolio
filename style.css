@@ -23,6 +23,7 @@ nav.navbar {
   position: fixed;
   width: -webkit-fill-available;
   z-index: 100;
+  border-bottom: #198754 1px solid;
 }
 
 .nav-sections {
@@ -32,6 +33,13 @@ nav.navbar {
 a.navbar-brand {
   padding-left: 20px;
 }
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffffff;
+  background: #198754;
+  border-radius: 15%;
+  transition: 0.3s;
+}
+
 /* nav done */
 
 /* Home */
@@ -102,6 +110,10 @@ img.about_pic {
 
 /* Skilss */
 
+#Skills {
+  padding-bottom: 5%;
+}
+
 .skill-content {
   display: flex;
   flex-direction: column;
@@ -130,6 +142,10 @@ img.about_pic {
 }
 
 /* Testimonials */
+
+#Testimonials {
+  padding-bottom: 5%;
+}
 
 .carousel-indicators {
   bottom: 10px;
@@ -241,6 +257,7 @@ section#Projects {
   display: flex;
   justify-content: center;
   padding-bottom: 80px;
+  padding-left: 120px;
   position: absolute;
 }
 
@@ -307,13 +324,34 @@ section#Projects {
   padding-bottom: 3px;
 }
 
+.modal-footer {
+  justify-content: space-evenly;
+  border-top: 1px solid #198754;
+}
+
+.modal-header {
+  border-bottom: 1px solid #198754;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #0dcaf0;
+  border-color: #0a58ca;
+}
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: #212529;
+  border-color: #565e64;
+}
+
 /* project done */
 
 /* contact */
 
 section#Contact {
   padding-top: 5%;
-  padding-bottom: 12%;
+  padding-bottom: 7%;
   display: flex;
   flex-direction: column;
   justify-content: center;

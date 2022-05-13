@@ -17,7 +17,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
@@ -33,21 +33,51 @@
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse nav-sections"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
-            <a class="nav-link" href="#About">About</a>
-            <a class="nav-link" href="#Resume">Resume</a>
-            <a class="nav-link" href="#Projects">Projects</a>
-            <a class="nav-link" href="#Contact">Contact</a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Home"
+                >Home</a
+              >
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#About"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#About">About Me</a></li>
+                <li><a class="dropdown-item" href="#Skills">Skills</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#Testimonials">Testimonials</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Project">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Conatct">Contact</a>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -137,7 +167,7 @@
             </div>
           </div>
         </div>
-        <div class="line-about"></div>
+        <div class="line-about" id="Skills"></div>
         <div class="container">
           <div class="header">
             <h2>
@@ -254,7 +284,7 @@
             </div>
           </div>
         </div>
-        <div class="line-skills"></div>
+        <div class="line-skills" id="Testimonials"></div>
         <div class="container Testimonials">
           <div class="header">
             <h2>
@@ -693,7 +723,7 @@
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content bg-dark text-light">
           <div class="modal-header">
             <h5 class="modal-title" id="project-1-Label">Project-1</h5>
             <button
@@ -715,11 +745,12 @@
               </div>
             </div>
           </div>
+
           <div class="modal-footer">
             <a
               href="https://github.com/AbuBakrKhan24/Calculator.git"
               target="_blank"
-              class="btn btn-primary"
+              class="btn btn-secondary"
               ><i class="fa-brands fa-github github-icon-project"></i
             ></a>
             <a
@@ -746,7 +777,7 @@
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content bg-dark text-light">
           <div class="modal-header">
             <h5 class="modal-title" id="project-2-Label">Project-2</h5>
             <button
@@ -773,7 +804,7 @@
             <a
               href="https://github.com/AbuBakrKhan24/Project_1.git"
               target="_blank"
-              class="btn btn-primary"
+              class="btn btn-secondary"
               ><i class="fa-brands fa-github github-icon-project"></i
             ></a>
 
@@ -801,7 +832,7 @@
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content bg-dark text-light">
           <div class="modal-header">
             <h5 class="modal-title" id="project-3-Label">Project-3</h5>
             <button
@@ -828,7 +859,7 @@
             <a
               href="https://github.com/AbuBakrKhan24/holiday_destination.git"
               target="_blank"
-              class="btn btn-primary"
+              class="btn btn-secondary"
               ><i class="fa-brands fa-github github-icon-project"></i
             ></a>
 
@@ -856,7 +887,7 @@
       aria-hidden="true"
     >
       <div class="modal-dialog">
-        <div class="modal-content">
+        <div class="modal-content bg-dark text-light">
           <div class="modal-header">
             <h5 class="modal-title" id="project-4-Label">Project-4</h5>
             <button
@@ -880,7 +911,7 @@
           </div>
           <div class="modal-footer">
             <a
-              class="btn btn-primary"
+              class="btn btn-secondary"
               href="https://github.com/AbuBakrKhan24/Personal_Portfolio.git"
               target="_blank"
               ><i class="fa-brands fa-github github-icon-project"></i
@@ -919,6 +950,7 @@
         console.log("callback - particles.js config loaded");
       });
     </script>
+
     <script
       src="https://kit.fontawesome.com/edecc44186.js"
       crossorigin="anonymous"
