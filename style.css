@@ -7,9 +7,7 @@ section.section_style {
   padding-bottom: 30px;
 }
 
-
-
-#particular {
+#homepage {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -44,12 +42,10 @@ section#Home {
 }
 
 .home-info {
-display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .home_details {
   display: flex;
@@ -71,7 +67,6 @@ section#About {
 }
 
 .header-about {
-
   padding-bottom: 30px;
 }
 
@@ -94,7 +89,6 @@ img.about_pic {
   margin-bottom: 10px;
   color: #222;
 }
-
 
 .about_details_col1 {
   padding-left: 10px;
@@ -168,7 +162,6 @@ img.about_pic {
   padding: 30px;
 }
 
-
 /* about done */
 
 /* Resume */
@@ -198,7 +191,7 @@ section#Resume {
 
 .line-resume {
   margin-top: 10%;
-  
+
   border-top: solid 2px #08d665;
 }
 
@@ -224,11 +217,7 @@ section#Projects {
 }
 
 .project-details {
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.7) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
+  background: #212529;
   color: white;
   position: absolute;
   top: 0;
@@ -248,13 +237,17 @@ section#Projects {
   border: 3px #198754 solid;
 }
 
+.header-project-box {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 80px;
+  position: absolute;
+}
+
 .project-card {
   padding-top: 10px;
   padding-bottom: 10px;
-  width: 40%;
 }
-
-
 
 .project img {
   object-fit: cover;
@@ -267,11 +260,51 @@ section#Projects {
   justify-content: center;
 }
 
+#project1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#project2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#project3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+#project4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
 .line-projects {
   margin-top: 5%;
   margin-bottom: 9%;
   border-top: solid 2px #08d665;
+}
+
+.github-icon-project {
+  color: #fff;
+}
+
+.netlify-icon {
+  vertical-align: middle;
+  object-fit: cover;
+  height: 20px;
+  width: 100%;
+  padding-bottom: 3px;
 }
 
 /* project done */
